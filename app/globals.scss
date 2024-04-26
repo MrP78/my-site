@@ -4,22 +4,23 @@
 
 *{
   font-size: 24px;
+  box-sizing: border-box;
 }
 
 :root {
-
+  
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    
+    background-color: rgb(48, 48, 48);
+    color: rgb(240, 240, 240);
   }
 }
 
 body {
  padding: 2rem;
- background-color: rgb(48, 48, 48);
- color: rgb(240, 240, 240);
+
  
 }
 

@@ -1,0 +1,14 @@
+.card{
+    // border: 1px solid black;
+    box-shadow: 4px 4px 8px -3px rgba(0,0,0,0.75);
+    border-radius: 10%;
+    padding: 0.5rem;
+    transition: all 0.5s;
+    cursor: pointer;
+    box-sizing: border-box;
+    background-color: rgba(243, 243, 243, 0.466);
+}
+.card:hover{
+    box-shadow: none;
+    // border: 0.5px solid rgb(189, 189, 189);
+}
