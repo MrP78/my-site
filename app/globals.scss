@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  font-size: 24px;
+}
+
+:root {
+
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    
+  }
+}
+
+body {
+ padding: 2rem;
+ background-color: rgb(48, 48, 48);
+ color: rgb(240, 240, 240);
+ 
+}
+
+.heading-1{
+  font-size: 5rem;
+  font-weight: 700;
+}
+.heading-2{
+  font-size: 4rem;
+  font-weight: 600;
+}
+.heading-3{
+  font-size: 3rem;
+  font-weight: 500;
+}
+.heading-4{
+  font-size: 2rem;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
