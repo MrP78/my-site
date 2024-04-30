@@ -8,9 +8,8 @@ const Article = () => {
   const title = searchParams.get("title");
   return (
     <>
-      <Suspense>
-        <h1 className="heading-1 text-center">{title}</h1>
-      </Suspense>
+      <h1 className="heading-1 text-center">{title}</h1>
+
       {/* <p>{params.text}</p> */}
     </>
   );

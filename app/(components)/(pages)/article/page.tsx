@@ -1,8 +1,11 @@
+import { Suspense } from "react";
 import Article from "../../features/article/Article";
 const Page = () => {
   return (
     <>
-      <Article />
+      <Suspense>
+        <Article />
+      </Suspense>
     </>
   );
 };
