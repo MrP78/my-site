@@ -1,24 +1,16 @@
-import Card from "../ui/card";
+import Card from "@/app/(components)/ui/card";
+import { Article } from "@/app/lib/definitions";
 import "./cards.scss";
 
-interface ICard {
-  title: string;
-  text: string;
-}
-
-const Cards = () => {
-  const simCards: ICard[] = [
-    { title: "Jim", text: "Jim Lorem" },
-    { title: "Bob", text: "Bob Lorem" },
-  ];
-
+const Cards = ({ articles }: { articles: Article[] }) => {
   return (
     <section className="cards">
       <div>cards</div>
-      {simCards.map((card) => {
+      {articles.map((card) => {
         return (
           <Card
-            key={card.title}
+            key={card.id}
+            id={card.id}
             title={card.title}
             text={card.text}
           />

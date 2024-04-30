@@ -1,14 +1,20 @@
+@use "./scss/customButton.scss";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-*{
-  font-size: 24px;
+$purple: #640d6b;
+$pink: #b51b75;
+$orange: #e65c19;
+$yellow: #f8d082;
+
+* {
+  font-size: 16px;
   box-sizing: border-box;
 }
 
 :root {
-  
 }
 
 @media (prefers-color-scheme: dark) {
@@ -19,25 +25,58 @@
 }
 
 body {
- padding: 2rem;
-
- 
+  // padding: 2rem 4rem;
+  // background-color: $purple;
+  // color: $yellow;
+  background-color: #fffcf7;
 }
 
-.heading-1{
+.heading-1 {
   font-size: 5rem;
   font-weight: 700;
+  text-align: center;
 }
-.heading-2{
+.heading-2 {
   font-size: 4rem;
   font-weight: 600;
 }
-.heading-3{
+.heading-3 {
   font-size: 3rem;
   font-weight: 500;
 }
-.heading-4{
+.heading-4 {
   font-size: 2rem;
+}
+.section {
+  padding: 1rem 5rem;
+}
+.purple-section {
+  background-color: $purple;
+  padding: 1rem 5rem;
+  color: $yellow;
+}
+.yellow-section {
+  background-color: $yellow;
+  padding: 1rem 5rem;
+  color: $purple;
+}
+.orange-section {
+  background-color: $orange;
+  padding: 1rem 5rem;
+  color: black;
+}
+.pink-section {
+  background-color: $pink;
+  padding: 1rem 5rem;
+}
+.hero {
+  //  height: 8rem;
+
+  background-image: url("../public/bg_sligro.jpg");
+  background-repeat: no-repeat;
+  // background-size: contain;
+  background-size: cover;
+  background-position: center;
 }
 
 @layer utilities {
